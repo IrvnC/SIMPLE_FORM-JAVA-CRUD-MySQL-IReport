@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="e1f8c47c-6196-44a9-85ac-9df54dab2d05">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pasien.`id_pasien` AS pasien_id_pasien,
+     pasien.`tanggal` AS pasien_tanggal,
+     pasien.`nik` AS pasien_nik,
+     pasien.`nama` AS pasien_nama,
+     pasien.`alamat` AS pasien_alamat,
+     pasien.`umur` AS pasien_umur,
+     pasien.`lantai` AS pasien_lantai,
+     pasien.`kelas` AS pasien_kelas,
+     pasien.`ruangan` AS pasien_ruangan,
+     pasien.`biaya` AS pasien_biaya
+FROM
+     `pasien` pasien]]>
+	</queryString>
+	<field name="pasien_id_pasien" class="java.lang.Integer"/>
+	<field name="pasien_tanggal" class="java.lang.String"/>
+	<field name="pasien_nik" class="java.lang.String"/>
+	<field name="pasien_nama" class="java.lang.String"/>
+	<field name="pasien_alamat" class="java.lang.String"/>
+	<field name="pasien_umur" class="java.lang.Integer"/>
+	<field name="pasien_lantai" class="java.lang.Integer"/>
+	<field name="pasien_kelas" class="java.lang.String"/>
+	<field name="pasien_ruangan" class="java.lang.String"/>
+	<field name="pasien_biaya" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="106" splitType="Stretch">
+			<staticText>
+				<reportElement x="109" y="0" width="446" height="26" uuid="a58250cd-4d56-4871-a1de-cef5d5528af6"/>
+				<textElement textAlignment="Center">
+					<font size="18"/>
+				</textElement>
+				<text><![CDATA[RUMAH SAKIT TEKNOLOGI MODERN]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="26" width="446" height="20" uuid="0c094759-d95d-4115-bef5-e7faebbfa94b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Jalan Update Terbaru No.1, Semarang 11201 Jawa Tengah]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="46" width="446" height="20" uuid="ecc66867-6391-42f1-b69e-50492d2ed0b3"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Telp. (024)122112212 Fax.(024)213121300]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="109" y="66" width="446" height="20" uuid="2b3046be-8a5c-441b-a54e-2282160305ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="14"/>
+				</textElement>
+				<text><![CDATA[Email : Tech1Future@hospital.co.id]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="97" width="555" height="6" forecolor="#FF3333" backcolor="#FF3333" uuid="2e44ee3d-5d94-4d9c-85e7-139c07f5ef44"/>
+			</line>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="81" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="5" width="57" height="20" uuid="5694ed60-db2d-4d0c-8ef1-f211b04553c9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="57" y="5" width="71" height="20" uuid="f82a7535-0770-4d31-9889-dc2aa35c391e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[NIK]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="128" y="5" width="82" height="20" uuid="7ac24d92-fd3f-49e5-8b68-6bd24b9e24d0"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="210" y="5" width="90" height="20" uuid="062f7216-4cba-4a00-91c2-16f26da84e9b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="5" width="36" height="20" uuid="c83f606d-2553-48b0-94dd-5ee96c7e7d19"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Usia]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="336" y="5" width="43" height="20" uuid="0b230d5e-4427-4db6-bd1a-a874cd1260d7"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Lantai]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="379" y="5" width="48" height="20" uuid="47a6d1b4-bb11-46a3-a8d2-e3f6798f76ea"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Kelas]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="427" y="5" width="45" height="20" uuid="7e31d51f-3782-41b1-a5cd-23aaf278cd4a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Ruang]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="472" y="5" width="83" height="20" uuid="16433f21-9f26-4703-994e-6c3d8490bbbe"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Biaya]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="179" y="2" width="100" height="20" uuid="5afd6851-8c62-4a3b-9539-6f39d515e9cc"/>
+				<text><![CDATA[pasien_nik]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="128" y="0" width="82" height="20" uuid="1f9b66fc-3a17-435f-b3d6-dda5ea6f72b9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_nama}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="210" y="0" width="90" height="20" uuid="4eee92aa-18d0-4012-bd1c-b85e0d0a4382"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="57" y="0" width="71" height="20" uuid="0b814a06-025c-4ff4-af44-08c14ea32824"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_nik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="472" y="0" width="83" height="20" uuid="86bfc049-09a2-4ee2-b86a-314baf3f1ad4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_biaya}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="379" y="0" width="48" height="20" uuid="7b9ac4ae-f380-4e00-b778-e6b23e9c4e2e"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_kelas}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="0" width="57" height="20" uuid="6cebe2ee-4f8a-4fb1-86b2-4de87ad83b6c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_tanggal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="336" y="0" width="43" height="20" uuid="03fb972f-51c4-4be5-bf81-ec48b5d705f9"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_lantai}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="427" y="0" width="45" height="20" uuid="175103fe-c36f-47b3-a054-1035dab12362"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_ruangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="0" width="36" height="20" uuid="d2c21220-94d8-4325-9c87-e9fdf808aaff"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{pasien_umur}]]></textFieldExpression>
+			</textField>
+			<rectangle>
+				<reportElement x="0" y="41" width="57" height="20" uuid="199bd6f5-de79-4d8d-b55c-8226743ae84e"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="128" y="41" width="82" height="20" uuid="fb40cbf9-35ba-48b6-b0ad-9d3929e8c677"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="57" y="41" width="71" height="20" uuid="247a6d65-450b-4142-9151-66e11d7361f7"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="210" y="41" width="90" height="20" uuid="c308ceac-5bbf-4b92-b1f2-e4b56a41ba26"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="300" y="41" width="36" height="20" uuid="ff702669-7ac9-4961-b847-90d1e26642de"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="482" y="347" width="36" height="20" uuid="932a21ed-31ec-44f4-ab0b-69b53eea761b"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="404" y="303" width="43" height="20" uuid="76c763ed-2d17-4efb-8f05-0bbf2d785cd8"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="492" y="263" width="48" height="20" uuid="f7e4b7fd-388d-4aa2-8613-b187c4d7e7ba"/>
+			</rectangle>
+			<rectangle>
+				<reportElement x="356" y="283" width="48" height="20" uuid="e11f8103-1261-42d3-82fd-9a3363c51b5a"/>
+			</rectangle>
+			<textField>
+				<reportElement x="210" y="51" width="100" height="20" uuid="a7c599eb-43b2-40bf-95b9-ccf017a7e3a8"/>
+				<textFieldExpression><![CDATA[$F{pasien_nik}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch">
+			<rectangle>
+				<reportElement x="67" y="10" width="71" height="26" uuid="2d6b0b3e-829b-4343-bebe-db984b5dae7b"/>
+			</rectangle>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
